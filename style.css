@@ -46,13 +46,15 @@ body {
   left: 0px;
   animation-name: drive;
   animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
 @keyframes drive {
   from {
-    transform: translateX(0);
+    transform: translateX(0px);
   }
   to {
-    transform: translateX(700px);
+    transform: translateX(600px);
   }
 }
