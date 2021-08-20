@@ -27,6 +27,7 @@ body {
   background: dimgrey;
   box-sizing: border-box;
   border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
   width: 100%;
 }
 
@@ -37,4 +38,21 @@ body {
   width: 100%;
   position: absolute;
   top: 45%;
+}
+
+.mario {
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  animation-name: drive;
+  animation-duration: 3s;
+}
+
+@keyframes drive {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(700px);
+  }
 }
